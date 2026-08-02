@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Archive — Students Unbridled</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead-top">
+      <span id="today-date"></span>
+      <span>Vol. 1 · Est. 2026</span>
+    </div>
+    <div class="masthead-brand">
+      <a href="index.html">
+        <h1 class="nameplate">Students <span class="word-2">Unbridled</span></h1>
+      </a>
+      <p class="tagline">Student essays on politics, society, and anything else worth writing about, ie. <i>everything</i></p>
+    </div>
+  </div>
+  <nav class="primary-nav">
+    <a href="index.html">Home</a>
+    <a href="archive.html" class="active">Archive</a>
+    <a href="about.html">About &amp; Submit</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <div class="archive-header">
+    <h1>Full Archive</h1>
+    <p>Unbridled access to every article we've published.</p>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-group" id="category-filters"></div>
+    <div class="filter-divider"></div>
+    <div class="filter-group" id="format-filters"></div>
+    <select class="sort-select" id="sort-select">
+      <option value="newest">Newest first</option>
+      <option value="oldest">Oldest first</option>
+      <option value="title">Title (A–Z)</option>
+    </select>
+  </div>
+
+  <div class="archive-list" id="archive-list"></div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Students Unbridled. Student-run and student-written.</span>
+    <a href="github">GitHub</a>
+    <a href="about.html">Submit an essay &rarr;</a>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.getElementById("today-date").textContent = new Date().toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+  initArchivePage();
+</script>
+</body>
+</html>
