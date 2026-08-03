@@ -5,7 +5,7 @@
   --paper-raised: #FFFFFF; /* card background */
   --amber:      #C98A2B;   /* accent / links / underline */
   --amber-dark: #9C6A1C;
-  --rule:       #D8D5CC;   /* hairline dividers */
+  --hairline:   #D8D5CC;   /* hairline dividers */
   --academic:   #8B3A3A;   /* badge: academic */
   --nonacademic:#2D6E6E;   /* badge: non-academic */
 
@@ -38,8 +38,14 @@ a {
 
 img { max-width: 100%; display: block; }
 
+
 p {
-  font-family: 'libre baskerville', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'libre baskerville', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+
+li {
+font-family: 'libre baskerville', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 200;
 }
 
@@ -102,11 +108,11 @@ p {
 }
 
 nav.primary-nav {
-  border-top: 1px solid var(--rule);
   display: flex;
   justify-content: center;
   gap: 36px;
-  padding: 14px 0;
+  padding: 5px 0;
+  padding-bottom: 30px;
   font-family: var(--font-mono);
   font-size: 0.82rem;
   letter-spacing: 0.04em;
@@ -128,7 +134,7 @@ nav.primary-nav a.active {
 
 .featured {
   padding: 48px 0 40px;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--hairline);
 }
 
 .featured-eyebrow {
@@ -191,7 +197,7 @@ nav.primary-nav a.active {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  border: 1px solid var(--rule);
+  border: 1px solid var(--hairline);
   padding: 3px 9px;
   border-radius: 3px;
 }
@@ -268,7 +274,7 @@ nav.primary-nav a.active {
 
 .archive-header {
   padding: 40px 0 20px;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--hairline);
 }
 
 .archive-header h1 {
@@ -303,7 +309,7 @@ nav.primary-nav a.active {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   background: transparent;
-  border: 1px solid var(--rule);
+  border: 1px solid var(--hairline);
   color: var(--ink-soft);
   padding: 6px 12px;
   border-radius: 3px;
@@ -325,14 +331,14 @@ nav.primary-nav a.active {
 .filter-divider {
   width: 1px;
   height: 20px;
-  background: var(--rule);
+  background: var(--hairline);
   margin: 0 6px;
 }
 
 .sort-select {
   font-family: var(--font-mono);
   font-size: 0.74rem;
-  border: 1px solid var(--rule);
+  border: 1px solid var(--hairline);
   border-radius: 3px;
   padding: 6px 10px;
   background: var(--paper-raised);
@@ -352,7 +358,7 @@ nav.primary-nav a.active {
   gap: 20px;
   align-items: start;
   padding: 20px 0;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--hairline);
 }
 
 @media (max-width: 700px) {
@@ -425,8 +431,8 @@ nav.primary-nav a.active {
 }
 
 .essay-detail .byline {
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
   padding: 12px 0;
   margin-bottom: 30px;
 }
@@ -493,7 +499,7 @@ nav.primary-nav a.active {
 
 .cta-box {
   background: var(--paper-raised);
-  border: 1px solid var(--rule);
+  border: 1px solid var(--hairline);
   border-left: 4px solid var(--amber);
   padding: 24px;
   border-radius: 4px;
