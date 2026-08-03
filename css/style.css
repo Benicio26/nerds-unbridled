@@ -3,8 +3,8 @@
   --ink-soft:   #48546E;   /* secondary text */
   --paper:      #F5F4EF;   /* page background */
   --paper-raised: #FFFFFF; /* card background */
-  --amber:      #C98A2B;   /* accent / links / underline */
-  --amber-dark: #9C6A1C;
+  --amber:      #CF5C36;   /* accent / links / underline */
+  --amber-dark: #a94b2c;   /* headlines / hover elements */
   --hairline:   #D8D5CC;   /* hairline dividers */
   --academic:   #8B3A3A;   /* badge: academic */
   --nonacademic:#2D6E6E;   /* badge: non-academic */
@@ -95,7 +95,7 @@ font-family: 'libre baskerville', Tahoma, Geneva, Verdana, sans-serif;
 .nameplate .word-2 {
   font-style: italic;
   font-weight: 400;
-  color: var(--amber-dark);
+  color: var(--amber);
   position: relative;
 }
 
@@ -497,6 +497,13 @@ nav.primary-nav a.active {
   padding-left: 20px;
 }
 
+/* TBD - Make asterix id:Minty display text 'Minty is the opposite of spicy'
+
+.hover-note:hover {
+  display: block;
+}
+*/
+
 .cta-box {
   background: var(--paper-raised);
   border: 1px solid var(--hairline);
@@ -553,21 +560,26 @@ nav.primary-nav a.active {
 }
 
 .disclaimer-box {
-  background-color: #f6b2b2;
-  border-radius: 20px;
-  padding: 1.5rem;
-  padding-top: -1rem;
-  margin: 2rem 0;
+  background: var(--paper-raised);
+  /* border: 1px solid var(--hairline); */
+  border: 4px solid var(--amber);
+  padding: 24px;
+  border-radius: 4px;
+  margin: 28px 0;
 }
 
 .disclaimer-box li {
   list-style-type: none;
   padding: 0.5rem;
+  display: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .disclaimer-box::before {
   content: "Disclaimers!";
   font-size: 1.5rem;
+  color: var(--amber-dark);
   display: flex;
   justify-content: center;
   align-items: center;
