@@ -163,6 +163,18 @@ function initArchivePage() {
 
 /* ---------------- ESSAY DETAIL  ---------------- */
 
+function loadEssayContent(essay) {
+  if (typeof essay.content === "string") {
+    const html = marked.parse(essay.content);
+
+    return DOMPurify.sanitize(html, {
+      USE_PROFILES: { html: true }
+    });
+  }
+
+  return "";
+}
+
 function initEssayPage() {
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
@@ -176,6 +188,7 @@ function initEssayPage() {
       <p>We couldn't find the essay you were looking for. It may have been moved or the link is incorrect.</p>
       <img src="images/notFoundCat.png" alt="Confused Cat" style="width:300px;height:300px;margin:auto;margin-top:40px;">
     `;
+
     document.title = "Not found — Students Unbridled";
     return;
   }
@@ -184,19 +197,36 @@ function initEssayPage() {
 
   container.innerHTML = `
     <a class="back-link" href="archive.html">&larr; Back to archive</a>
+
     <div class="badges">
       ${badgeHTML(essay.format)}
       <span class="tag">${essay.category}</span>
     </div>
+
     <h1>${essay.title}</h1>
+
     <p>${essay.excerpt}</p>
+
     <div class="byline">
       <span>By ${essay.author}</span>
       <span>&middot;</span>
       <span>${formatDate(essay.date)}</span>
     </div>
-    <div class="essay-body">
-      ${essay.content.map(p => `<p>${p}</p>`).join("")}
+
+    <div class="essay-body" id="essay-body">
+      <p>Loading article...</p>
     </div>
   `;
+
+  const body = document.getElementById("essay-body");
+
+  try {
+    body.innerHTML = loadEssayContent(essay);
+  } catch (error) {
+    console.error(error);
+
+    body.innerHTML = `
+      <p>There was a problem loading this article.</p>
+    `;
+  }
 }

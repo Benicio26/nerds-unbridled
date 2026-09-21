@@ -456,6 +456,64 @@ nav.primary-nav a.active {
   font-weight: 700;
 }
 
+.essay-body h2 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin: 2em 0 0.7em;
+  color: var(--ink);
+}
+
+.essay-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  line-height: 1.25;
+  margin: 1.8em 0 0.6em;
+  color: var(--ink);
+}
+
+.essay-body strong {
+  font-weight: 700;
+}
+
+.essay-body em {
+  font-style: italic;
+}
+
+.essay-body a {
+  color: var(--amber);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.essay-body a:hover {
+  color: var(--amber-dark);
+}
+
+.essay-body blockquote {
+  margin: 2em 0;
+  padding: 0.2em 0 0.2em 1.4em;
+  border-left: 3px solid var(--amber);
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.essay-body ul,
+.essay-body ol {
+  margin: 1em 0 1.5em 1.5em;
+}
+
+.essay-body li {
+  margin-bottom: 0.5em;
+}
+
+.essay-body img {
+  max-width: 100%;
+  height: auto;
+  margin: 2em auto;
+}
+
+
 .back-link {
   display: inline-block;
   margin-bottom: 24px;
