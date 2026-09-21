@@ -513,6 +513,25 @@ nav.primary-nav a.active {
   margin: 2em auto;
 }
 
+.essay-body figure {
+  margin: 2em 0;
+}
+
+.essay-body figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.essay-body figcaption {
+  margin-top: 0.6em;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  text-align: center;
+  font-style: italic;
+}
 
 .back-link {
   display: inline-block;
