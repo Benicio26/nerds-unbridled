@@ -213,6 +213,14 @@ function initEssayPage() {
       <span>${formatDate(essay.date)}</span>
     </div>
 
+    <div class="essay-body" id="essay-note">
+      <span>${essay.note}</span> <br>
+      <br>
+      <hr>
+      <br>
+    </div>
+
+
     <div class="essay-body" id="essay-body">
       <p>Loading article...</p>
     </div>

@@ -43,7 +43,7 @@ const essays = files.map(file => {
     date: data.date,
     featured: data.featured === true,
     excerpt: data.excerpt,
-
+    note: data.note,
 
     content: content.trim()
   };

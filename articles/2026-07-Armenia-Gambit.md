@@ -5,10 +5,9 @@ format: "Academic"
 category: "Politics"
 date: "2026-07-28"
 featured: false
-excerpt: ""
+excerpt: "Despite the precarious circumstances after Nagorno-Karabakh's fall, will Armenia's drift towards the West eventually pay off amidst regional multilateral jostling?"
+note: "I wrote this article in August 2024 while working at a think tank in Yerevan, and have published it here untouched. Inevitably, it is no longer as topical or relevant as it was two years ago, as events have continued to unfold. However, I believe the core of this perspective remains accurate. I no longer agree with it entirely, due to changes both in circumstances and in my own convictions, but I believe it still holds enough insight to warrant cataloguing here."
 ---
-
-*Note: I wrote this article in August 2024 while working at a think tank in Yerevan, and have published it here untouched. Inevitably, it is no longer as topical or relevant as it was two years ago, as events have continued to unfold. However, I believe the core of this perspective remains accurate. I no longer agree with it entirely, due to changes both in circumstances and in my own convictions, but I believe it still holds enough insight to warrant cataloguing here.*
 
 <figure>
   <img src="images/yerevan.png" alt="Mother Armenia, Yerevan • Finn Chapman">

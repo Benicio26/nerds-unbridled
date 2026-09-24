@@ -545,6 +545,11 @@ nav.primary-nav a.active {
 
 .back-link:hover { color: var(--amber-dark); }
 
+#essay-note {
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
 /* ============ ABOUT / SUBMIT ================== */
 
 .page-content {

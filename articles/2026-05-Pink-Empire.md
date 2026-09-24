@@ -6,13 +6,8 @@ category: "Politics"
 date: "2026-05-04"
 featured: false
 excerpt: "An analysis and critique of liberal securofeminism, jineologî, and the interplay between class, capitalism, and empire."
+note: "The following is a co-written paper for a University course on Counterinsurgency and Counterterrorism."
 ---
-
-_**Note:** The following is a cowritten paper for a University course on Counterinsurgency and Counterterrorism._
-
-
-<hr>
-<br>
 
 Women's marginalized position in society places them in precarious situations across  contexts, positioned by states, capitalism, counter insurgents, and insurgents. Women as a whole  are frequently utilized as a rhetorical talking point to serve agendas. Women are under a triple bind,  as the founder of the PKK, Ocalan describes. Under patriarchy, women's submission to the male class is extracted through physical and social punishment. Their role is clear: to produce future  agents of capital, perpetuate the nuclear family as an economic unit, to support male breadwinners.  Under the state, which acts as a father figure, both paternalistic and threatening while offering  “protection” (protection from whom? Other men), women are supposed to sacrifice their bodies  for the state, also in the form of sexual reproduction: to produce soldiers and patriots. Capitalism is inherent to these state and patriarchal logics. The three themes identified here are Securofeminism,  the need for a reconceptualized feminism in the form of jineologî, and how Class and Capital  interact with Empire and Feminism. The last subject will be the one to which this paper provides  the largest contribution.  
 
@@ -31,7 +26,7 @@ Men’s role in all of this must be considered. Men cannot be incentivized out o
 Perhaps it is not only insurgents who have been radicalized against the state, or future  terrorists by religion. As Abu-Lughod points out, words like extremism and radicalization are  empty signifiers that propose simple solutions, decontextualized from their historical and political  realities. However, perhaps feminists must ask if it is men who have been radicalized against  women. Male politicians bombing women and girls is war against women. Rape committed by  soldiers is a form of terrorism, as is the rape caried out by women’s male peers on a systematic level.  The social devaluing of women is a constant psychological attack, sometimes a quiet buzz, yet  always present, like drones. Perhaps what is needed is feminist insurgency against masculinism as a  whole (a theory lauded by feminists like Andrea Dworkin), as a response to patriarchal capitalism  and the warfare, both high and low intensity, that men deploy against women every day.
 
 
-# Bibliography  
+## Bibliography  
 
 Abu-Lughod, Lila. “Securofeminism: Embracing a Phantom.” In The Cunning of Gender  Violence: Geopolitics and Feminism, edited by Lila Abu-Lughod, Rema Hammami,  Nadera Shalhoub-Kevorkian, 88–122. Durham: Duke University Press, 2023.  
 
