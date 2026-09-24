@@ -1,6 +1,6 @@
-# students-unbridled
+# Nerds-unbridled
 
-## Welcome to Students _Unbridled_!
+## Welcome to Nerds _Unbridled_!
 
 We are an independent, student-run publication for essays that take a position and defend it. We publish work centered on politics and public life, but we're open to any subject a writer can make a real argument about—culture, science, ethics, and beyond. We hold the view that all things worldly are political, all things relate to each other, and all things must be deconstructed.
 
