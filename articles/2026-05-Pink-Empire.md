@@ -5,12 +5,12 @@ format: "Academic"
 category: "Politics"
 date: "2026-05-04"
 featured: false
-excerpt: "An analysis and critique of liberal securofeminism and jineologî, and the interplay between class, capitalism, and empire."
+excerpt: "An analysis and critique of liberal securofeminism, jineologî, and the interplay between class, capitalism, and empire."
 ---
 
 _**Note:** The following is a cowritten paper for a University course on Counterinsurgency and Counterterrorism._
 
-<br>
+
 <hr>
 <br>
 
