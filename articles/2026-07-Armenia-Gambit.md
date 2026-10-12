@@ -1,8 +1,8 @@
 ---
 title: "Will Armenia's Western Gambit Pay Off?"
 author: "Finn Chapman"
-format: "Academic"
-category: "Politics"
+submission: "Thematic"
+theme: "Regional Politics"
 date: "2026-07-28"
 featured: false
 excerpt: "Despite the precarious circumstances after Nagorno-Karabakh's fall, will Armenia's drift towards the West eventually pay off amidst regional multilateral jostling?"
