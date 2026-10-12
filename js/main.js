@@ -102,12 +102,12 @@ function renderNewsPost() {
   const target = document.getElementById("news-post");
   if (!post) {
     document.title = "News not found — Nerds Unbridled";
-    target.innerHTML = '<a class="back-link" href="news.html">&larr; Back to news</a><h1>Announcement not found</h1>';
+    target.innerHTML = '<a class="back-link" href="/news/">&larr; Back to news</a><h1>Announcement not found</h1>';
     return;
   }
   document.title = `${post.title} — Nerds Unbridled`;
   target.innerHTML = `
-    <a class="back-link" href="news.html">&larr; Back to news</a>
+    <a class="back-link" href="/news/">&larr; Back to news</a>
     <div class="featured-eyebrow">News &amp; updates · ${formatDate(post.date)}</div>
     <h1>${escapeHTML(post.title)}</h1>
     <p class="news-post-summary">${escapeHTML(post.summary)}</p>

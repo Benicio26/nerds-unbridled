@@ -3,7 +3,7 @@ const NEWS_POSTS = [
   {
     id: "publication-launch",
     title: "Nerds Unbridled Launch",
-    date: "2026-10-32",
+    date: "2026-10-30",
     summary: "Welcome to Nerds Unbridled! We hope you'll stick around.",
     body: [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
