@@ -136,7 +136,7 @@ function initEssayPage() {
 
   if (!essay) {
     container.innerHTML = `
-      <a class="back-link" href="archive/archive.html">&larr; Back to archive</a>
+      <a class="back-link" href="/archive/">&larr; Back to archive</a>
       <h1>Essay not found</h1>
       <p>We couldn't find the essay you were looking for. It may have been moved or the link is incorrect.</p>
       <img src="images/notFoundCat.png" alt="Confused Cat" style="width:300px;height:300px;margin:auto;margin-top:40px;">
@@ -149,7 +149,7 @@ function initEssayPage() {
   document.title = `${essay.title} — Students Unbridled`;
 
   container.innerHTML = `
-    <a class="back-link" href="archive/archive.html">&larr; Back to archive</a>
+    <a class="back-link" href="/archive/">&larr; Back to archive</a>
 
     <div class="badges">
       ${badgeHTML(essay.submission)}
