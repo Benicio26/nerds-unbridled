@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nerds Unbridled</title>
-<meta name="description" content="Students Unbridled publishes academic and non-academic student essays on politics, culture, and campus life.">
+<title>Archive — Nerds Unbridled</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
@@ -27,26 +26,31 @@
     </div>
   </div>
   <nav class="primary-nav">
-    <a href="../index/index.html" class="active" aria-current="page">Latest</a>
-    <a href="../themes/themes.html">Themes</a>
-    <a href="../archive/archive.html">Archive</a>
-    <a href="../about/about.html">About &amp; Submit</a>
-    <a href="../news/news.html">News</a>
+    <a href="/">Latest</a>
+    <a href="/themes/">Themes</a>
+    <a href="/archive/" class="active" aria-current="page">Archive</a>
+    <a href="/about/">About &amp; Submit</a>
+    <a href="/news/">News</a>
   </nav>
 </header>
 
 <main class="wrap">
 
-  <section class="featured" id="featured-essay">
-  </section>
-
-  <div class="section-heading">
-    <h3>Recent Essays</h3>
-    <a href="../archive/archive.html">View full archive &rarr;</a>
+  <div class="archive-header">
+    <h1>Full Archive</h1>
+    <p>Unbridled access to every article we've published.</p>
   </div>
 
-  <section class="essay-grid" id="essay-grid">
-  </section>
+  <div class="filter-bar">
+    <label for="sort-select">Sort by</label>
+    <select class="sort-select" id="sort-select">
+      <option value="newest">Newest first</option>
+      <option value="oldest">Oldest first</option>
+      <option value="title">Title (A–Z)</option>
+    </select>
+  </div>
+
+  <div class="archive-list" id="archive-list"></div>
 
 </main>
 
@@ -55,7 +59,7 @@
     <span>&copy; 2026 Nerds Unbridled. Student-run and student-written.</span>
     <span>Made with love.</span>
     <a href="https://github.com/Benicio26/students-unbridled/tree/main">GitHub</a>
-    <a href="../about.html">Submit an essay &rarr;</a>
+    <a href="../about/about.html">Submit an essay &rarr;</a>
   </div>
 </footer>
 
@@ -63,7 +67,7 @@
 <script src="../js/main.js"></script>
 <script>
   document.getElementById("today-date").textContent = new Date().toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
-  renderHomepage();
+  initArchivePage();
 </script>
 </body>
 </html>

@@ -27,18 +27,20 @@
     </div>
   </div>
   <nav class="primary-nav">
-    <a href="../index/index.html">Latest</a>
-    <a href="../themes/themes.html" class="active" aria-current="page">Themes</a>
-    <a href="../archive/archive.html">Archive</a>
-    <a href="../about/about.html">About &amp; Submit</a>
-    <a href="../news/news.html">News</a>
+  <a href="/">Latest</a>
+  <a href="/themes/">Themes</a>
+  <a href="/archive/">Archive</a>
+  <a href="/about/">About &amp; Submit</a>
+  <a href="/news/" class="active" aria-current="page">News</a>
   </nav>
 </header>
 
 <main class="wrap">
-  <div class="archive-header"><h1>Themes</h1>
-    <p>A list of all of our themes. Click on any theme to see a full list of articles under that theme!.</p></div>
-  <section class="themes-list" id="themes-list" aria-label="Themes"></section>
+  <div class="archive-header">
+    <h1>News &amp; Updates</h1>
+    <p>Stay up-to-date with the most recent Nerds <i>Unbridled</i> news!</p>
+  </div>
+  <section class="themes-list" id="news-list" aria-label="News and announcements"></section>
 </main>
 
 <footer>
@@ -50,11 +52,11 @@
   </div>
 </footer>
 
-<script src="../js/data.js"></script>
+<script src="../js/news-data.js"></script>
 <script src="../js/main.js"></script>
 <script>
   document.getElementById("today-date").textContent = new Date().toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
-  renderThemesPage();
+  renderNewsPage();
 </script>
 </body>
 </html>
