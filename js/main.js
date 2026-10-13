@@ -74,7 +74,7 @@ function initThemeDetailPage() {
   const theme = THEMES.find(t => t.slug === slug);
   const header = document.getElementById("theme-heading");
   const list = document.getElementById("theme-articles");
-  if (!theme) {header.textContent = "Theme not found";list.innerHTML = '<div class="empty-state">This theme does not exist. <a href="themes.html">View all themes</a>.</div>';return;}
+  if (!theme) {header.textContent = "Theme not found";list.innerHTML = '<div class="empty-state">This theme does not exist. <a href="/themes/">View all themes</a>.</div>';return;}
   document.title = `${theme.name} — Nerds Unbridled`;
   header.textContent = theme.name;
   document.getElementById("theme-description").textContent = theme.description;
