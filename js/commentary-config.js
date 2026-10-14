@@ -11,7 +11,8 @@
  *      E.g. for entry.123456789=..., use articleFieldEntry: "123456789".
  * When articleFieldEntry is empty, readers are explicitly told to name the article.
  */
+
 const COMMENTARY_FORM = {
   url: "https://forms.gle/k7MbpRyKsiy3PNnt8",
-  articleFieldEntry: ""
+  articleFieldEntry: "hui"
 };

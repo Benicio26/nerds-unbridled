@@ -18,6 +18,6 @@ const COMMENTARIES = [
     "date": "2026-10-14",
     "excerpt": "Short synopsis.",
     "wordCount": 4,
-    "content": "<figure>\n  <img src=\"images/juan.png\" alt=\"Mother Armenia, Yerevan • Finn Chapman\">\n  <figcaption>Juan • The Editors</figcaption>\n</figure>"
+    "content": "<figure>\n  <img src=\"../images/juan.png\" alt=\"Mother Armenia, Yerevan • Finn Chapman\">\n  <figcaption>Juan • The Editors</figcaption>\n</figure>"
   }
 ];
