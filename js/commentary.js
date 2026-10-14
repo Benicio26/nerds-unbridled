@@ -128,7 +128,7 @@ function renderCommentaryArticle() {
     return;
   }
   document.title = `${item.title} — Nerds Unbridled`;
-  target.innerHTML = `<a class="back-link" href="${commentaryThreadURL(essay.id)}">&larr; Commentaries on ${escapeHTML(essay.title)}</a>
+  target.innerHTML = `<a class="back-link" href="${commentaryThreadURL(essay.id)}">&larr; Back to all commentaries on "${escapeHTML(essay.title)}"</a>
     <div class="featured-eyebrow">Commentary</div>
     <h1>${escapeHTML(item.title)}</h1>
     <p class="commentary-origin-excerpt">${escapeHTML(item.excerpt)}</p>

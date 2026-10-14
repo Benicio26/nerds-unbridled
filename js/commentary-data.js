@@ -11,6 +11,16 @@ const COMMENTARIES = [
     "content": "<figure>\n  <img src=\"../images/juan.png\" alt=\"Mother Armenia, Yerevan • Finn Chapman\">\n  <figcaption>Juan • The Editors</figcaption>\n</figure>"
   },
   {
+    "id": "2026-10-reply-to-finny-poo",
+    "articleId": "2026-07-Armenia-Gambit",
+    "title": "A response to FInny",
+    "author": "Spoopy",
+    "date": "2026-10-14",
+    "excerpt": "It do be like that.",
+    "wordCount": 4,
+    "content": "<figure>\n  <img src=\"../images/juan.png\" alt=\"\">\n  <figcaption>Joan • The Editors</figcaption>\n</figure>"
+  },
+  {
     "id": "2026-10-reply-to-the-editors",
     "articleId": "2026-09-unbridled-launch",
     "title": "A Thoughtful Reply to the Editors",
