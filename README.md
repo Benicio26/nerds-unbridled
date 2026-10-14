@@ -19,3 +19,7 @@ It will be subject to continuous improvements, in the hopes that I can improve m
 Cheers to anyone following along on this project, and please feel free to suggest improvements, I would be eternally grateful.
 
 If you feel like contributing to the project on a more long-term basis, feel free to privately message me via the email that's listed on GitHub profile! 
+
+## Commentaries
+
+Readers can submit a short, editor-reviewed response to an original essay. Responses are published as Markdown pieces connected to their parent article.

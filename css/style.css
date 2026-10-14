@@ -853,3 +853,55 @@ nav.primary-nav {
 .news-detail .featured-eyebrow { margin: 24px 0 14px; }
 .news-detail h1 { font-family: var(--font-display); font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.12; margin-bottom: 18px; }
 .news-post-summary { font-size: 1.14rem; line-height: 1.7; color: var(--ink-soft); margin-bottom: 30px; }
+
+/* ============ EDITORIAL COMMENTARY ============ */
+nav.primary-nav { flex-wrap: wrap; row-gap: 8px; }
+
+/* The same literary palette and article typography as the main essays. */
+#essay-commentary { margin-top: 50px; border-top: 2px solid var(--ink); padding-top: 30px; }
+.commentary-callout { padding: 28px 30px; background: var(--paper-raised); border-left: 4px solid var(--amber); margin: 28px 0 38px; }
+.commentary-callout h2 { font-family: var(--font-display); font-size: 1.7rem; line-height: 1.2; margin: 0 0 12px; }
+.commentary-callout p { color: var(--ink-soft); margin: 0 0 18px; max-width: 62ch; }
+.commentary-submit { display: inline-block; background: var(--ink); color: #fff; padding: 11px 18px; border-radius: 3px; font-family: var(--font-mono); font-size: .8rem; font-weight: 500; transition: background .15s; }
+.commentary-submit:hover, .commentary-submit:focus-visible { background: var(--amber-dark); color: white; }
+.commentary-callout .commentary-form-note { margin: 16px 0 0; font-size: .82rem; line-height: 1.65; }
+.commentary-unavailable, .commentary-closed { font-family: var(--font-mono); font-size: .82rem; color: var(--ink-soft); }
+.commentary-section-title { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; margin: 12px 0 18px; }
+.commentary-section-title h2 { font-family: var(--font-display); font-size: clamp(1.5rem,3vw,1.85rem); margin: 0; }
+.commentary-section-title > a { font-family: var(--font-mono); font-size: .73rem; color: var(--amber-dark); text-transform: uppercase; }
+.commentary-section-title > a:hover { text-decoration: underline; }
+.commentary-count { display: inline-block; vertical-align: middle; color: var(--ink-soft); font: 400 .78rem var(--font-mono); border: 1px solid var(--hairline); border-radius: 20px; padding: 4px 10px; }
+.commentary-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--hairline); }
+.commentary-list-item { display: flex; justify-content: space-between; align-items: center; gap: 18px; border-bottom: 1px solid var(--hairline); padding: 24px 0; }
+.commentary-list-item h3 { font-family: var(--font-display); font-size: clamp(1.2rem, 3vw, 1.48rem); line-height: 1.25; margin: 0 0 10px; }
+.commentary-list-item h3 a:hover, .commentary-origin-title:hover { color: var(--amber-dark); }
+.commentary-item-excerpt { margin: 0 0 12px; line-height: 1.65; color: var(--ink-soft); }
+.commentary-meta, .commentary-origin-meta { font-family: var(--font-mono); font-size: .77rem; color: var(--ink-soft); }
+.commentary-meta span, .commentary-origin-meta span { padding: 0 5px; }
+.commentary-arrow { font-family: var(--font-display); font-size: 1.4rem; color: var(--amber); }
+.commentary-empty { padding: 24px 0; font-family: var(--font-mono); font-size: .85rem; color: var(--ink-soft); }
+.commentary-empty a, .commentary-origin-meta a { text-decoration: underline; text-underline-offset: 3px; }
+.commentary-page { max-width: 780px; margin: 0 auto; padding: 48px 0 80px; min-height: 340px; }
+.commentary-page > h1 { font-family: var(--font-display); font-size: clamp(2.1rem, 5vw, 3.1rem); line-height: 1.12; margin: 12px 0 18px; }
+.commentary-origin-excerpt { font-size: 1.1rem; color: var(--ink-soft); max-width: 64ch; line-height: 1.75; }
+.commentary-origin-meta { margin: 24px 0; }
+.commentary-rule { border: 0; border-top: 2px solid var(--ink); margin: 36px 0 28px; }
+.commentary-threads { display: flex; flex-direction: column; gap: 16px; }
+.commentary-thread { display: block; padding: 26px 30px; border: 1px solid var(--hairline); border-left: 4px solid var(--amber); background: var(--paper-raised); transition: border-color .15s, transform .15s; }
+.commentary-thread:hover { border-color: var(--amber); transform: translateY(-2px); }
+.commentary-thread h2 { margin: 4px 0 10px; font-family: var(--font-display); font-size: 1.8rem; line-height: 1.2; }
+.commentary-thread p { margin: 0 0 14px; color: var(--ink-soft); }
+.commentary-reading > .featured-eyebrow { margin: 4px 0 14px; }
+.commentary-reading > .commentary-origin-excerpt { margin: 0 0 22px; }
+.commentary-in-response { border-left: 3px solid var(--amber); padding: 10px 0 10px 17px; color: var(--ink-soft); font-size: .94rem; margin: 0 0 35px; }
+.commentary-in-response a { text-decoration: underline; text-underline-offset: 3px; }
+.commentary-in-response a:hover { color: var(--amber-dark); }
+.commentary-after { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-top: 2px solid var(--ink); padding-top: 22px; margin-top: 48px; font: .78rem var(--font-mono); }
+.commentary-after a { color: var(--amber-dark); }
+.commentary-after a:hover { text-decoration: underline; }
+@media (max-width: 620px) {
+  nav.primary-nav { gap: 8px 16px; padding-left: 8px; padding-right: 8px; font-size: .72rem; }
+  .masthead.is-scrolled nav.primary-nav { gap: 6px 14px; }
+  .commentary-callout { padding: 22px 18px; }
+  .commentary-thread { padding: 22px 18px; }
+}

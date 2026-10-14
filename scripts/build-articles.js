@@ -51,6 +51,7 @@ const essays = files.map(file => {
     theme: matchedTheme ? matchedTheme.name : null,
     date: data.date,
     featured: data.featured === true,
+    commentaryEnabled: data.commentary !== false,
     excerpt: data.excerpt,
     note: data.note,
 

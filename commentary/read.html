@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversations — Nerds Unbridled</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead-top">
+      <span id="today-date"></span>
+      <span>Vol. 1 · Est. 2026</span>
+    </div>
+    <div class="masthead-brand">
+      <a href="/">
+        <h1 class="nameplate">Nerds <span class="word-2">Unbridled</span></h1>
+      </a>
+      <p class="tagline">Student essays on politics, society, and anything else worth writing about, ie. <i>everything</i></p>
+    </div>
+  </div>
+  <nav class="primary-nav">
+    <a href="/">Latest</a>
+    <a href="/themes/">Themes</a>
+    <a href="/archive/">Archive</a>
+    <a href="/commentary/" class="active" aria-current="page">Conversations</a>
+    <a href="/about/">About &amp; Submit</a>
+    <a href="/news/">News</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <article class="essay-detail commentary-reading" id="commentary-article"></article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Nerds Unbridled. Student-run and student-written.</span>
+    <span>Made with love.</span>
+    <a href="https://github.com/Benicio26/students-unbridled/tree/main">GitHub</a>
+    <a href="/about/">Submit an essay &rarr;</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/commentary-data.js"></script>
+<script src="../js/commentary-config.js"></script>
+<script src="../js/commentary.js"></script>
+<script>
+  document.getElementById("today-date").textContent = new Date().toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+  renderCommentaryArticle();
+</script>
+</body>
+</html>

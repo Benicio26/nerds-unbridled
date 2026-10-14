@@ -142,11 +142,11 @@ function initEssayPage() {
       <img src="images/notFoundCat.png" alt="Confused Cat" style="width:300px;height:300px;margin:auto;margin-top:40px;">
     `;
 
-    document.title = "Not found — Students Unbridled";
+    document.title = "Not found — Nerds Unbridled";
     return;
   }
 
-  document.title = `${essay.title} — Students Unbridled`;
+  document.title = `${essay.title} — Nerds Unbridled`;
 
   container.innerHTML = `
     <a class="back-link" href="/archive/">&larr; Back to archive</a>
@@ -156,27 +156,24 @@ function initEssayPage() {
       ${essay.theme ? `<a class="tag" href="themes/theme.html?slug=${encodeURIComponent(THEMES.find(t => t.name === essay.theme)?.slug || "")}">${escapeHTML(essay.theme)}</a>` : ""}
     </div>
 
-    <h1>${essay.title}</h1>
+    <h1>${escapeHTML(essay.title)}</h1>
 
-    <p>${essay.excerpt}</p>
+    <p>${escapeHTML(essay.excerpt)}</p>
 
     <div class="byline">
-      <span>By ${essay.author}</span>
+      <span>By ${escapeHTML(essay.author)}</span>
       <span>&middot;</span>
       <span>${formatDate(essay.date)}</span>
     </div>
 
-    <div class="essay-body" id="essay-note">
-      <span>A note from the author: ${essay.note}</span> <br>
-      <br>
-      <hr>
-      <br>
-    </div>
+    ${essay.note ? `<div class="essay-body" id="essay-note"><span>A note from the author: ${escapeHTML(essay.note)}</span><hr></div>` : ""}
 
 
     <div class="essay-body" id="essay-body">
       <p>Loading article...</p>
     </div>
+
+    <div id="essay-commentary"></div>
   `;
 
   const body = document.getElementById("essay-body");
@@ -190,6 +187,8 @@ function initEssayPage() {
       <p>There was a problem loading this article.</p>
     `;
   }
+
+  if (typeof renderEssayCommentary === "function") renderEssayCommentary(essay);
 }
 
 /* ---------------- FIXED / AUTO-COMPACTING MASTHEAD ---------------- */

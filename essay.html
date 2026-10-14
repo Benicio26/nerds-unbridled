@@ -19,7 +19,7 @@
       <span>Vol. 1 · Est. 2026</span>
     </div>
     <div class="masthead-brand">
-      <a href="index/index.html">
+      <a href="/">
         <h1 class="nameplate">Nerds <span class="word-2">Unbridled</span></h1>
       </a>
       <p class="tagline">Student essays on politics, society, and anything else worth writing about, ie. <i>everything</i></p>
@@ -29,6 +29,7 @@
       <a href="/">Latest</a>
     <a href="/themes/">Themes</a>
     <a href="/archive/">Archive</a>
+    <a href="/commentary/">Conversations</a>
     <a href="/about/">About &amp; Submit</a>
     <a href="/news/">News</a>
   </nav>
@@ -44,7 +45,7 @@
     <span>&copy; 2026 Nerds Unbridled. Student-run and student-written.</span>
     <span>Made with love.</span>
     <a href="https://github.com/Benicio26/students-unbridled/tree/main">GitHub</a>
-    <a href="about/about.html">Submit an essay &rarr;</a>
+    <a href="/about/">Submit an essay &rarr;</a>
   </div>
 </footer>
 
@@ -53,6 +54,9 @@
 
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
+<script src="js/commentary-data.js"></script>
+<script src="js/commentary-config.js"></script>
+<script src="js/commentary.js"></script>
 <script>
   document.getElementById("today-date").textContent = new Date().toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
   initEssayPage();
