@@ -74,7 +74,7 @@ function initThemeDetailPage() {
   const theme = THEMES.find(t => t.slug === slug);
   const header = document.getElementById("theme-heading");
   const list = document.getElementById("theme-articles");
-  if (!theme) {header.textContent = "Theme not found";list.innerHTML = '<div class="empty-state">This theme does not exist. <a href="/themes/">View all themes</a>.</div>';return;}
+  if (!theme) {header.textContent = "Theme not found";list.innerHTML = '<img src="../images/notFoundCat.png" alt="Confused Cat" style="width:300px;height:300px;margin:auto;margin-top:40px;"><div class="empty-state">Woah! seems like you might be looking for a theme that does not exist.<br><br><a href="/themes/" class="theme-back">View all themes</a>.</div>';return;}
   document.title = `${theme.name} — Nerds Unbridled`;
   header.textContent = theme.name;
   document.getElementById("theme-description").textContent = theme.description;
@@ -101,8 +101,8 @@ function renderNewsPost() {
   const post = NEWS_POSTS.find(item => item.id === id);
   const target = document.getElementById("news-post");
   if (!post) {
-    document.title = "News not found — Nerds Unbridled";
-    target.innerHTML = '<a class="back-link" href="/news/">&larr; Back to news</a><h1>Announcement not found</h1>';
+    document.title = "Announcement not found — Nerds Unbridled";
+    target.innerHTML = '<a class="back-link" href="/news/">&larr; Back to news</a><h1>Announcement not found</h1><img src="../images/notFoundCat.png" alt="Confused Cat" style="width:300px;height:300px;margin:auto;margin-top:40px;"><div class="empty-state"><p>Hmm, doesn\'t seem like we\'ve made this announcement yet.</p></div>';
     return;
   }
   document.title = `${post.title} — Nerds Unbridled`;
@@ -139,7 +139,7 @@ function initEssayPage() {
       <a class="back-link" href="/archive/">&larr; Back to archive</a>
       <h1>Essay not found</h1>
       <p>We couldn't find the essay you were looking for. It may have been moved or the link is incorrect.</p>
-      <img src="images/notFoundCat.png" alt="Confused Cat" style="width:300px;height:300px;margin:auto;margin-top:40px;">
+      <img src="../images/notFoundCat.png" alt="Confused Cat" style="width:300px;height:300px;margin:auto;margin-top:40px;">
     `;
 
     document.title = "Not found — Nerds Unbridled";

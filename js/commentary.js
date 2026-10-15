@@ -33,7 +33,7 @@ function commentarySubmitHTML(essay) {
     <div class="featured-eyebrow">Join the conversation</div>
     <h2>Have something to add?</h2>
     <p>Respond to this essay with a short piece of your own, up to 1,000 words. Submissions are reviewed by our editors before publication.</p>
-    <p>If your piece is approved, it will be listed below!</p>
+    <p>If your piece is approved, it will be listed in the list of published commentaries!</p>
     ${url
       ? `<a class="btn commentary-submit" href="${escapeHTML(url)}" rel="noopener noreferrer">Write a commentary &rarr;</a>`
       : `<p class="commentary-unavailable">Commentary submissions are temporarily closed.</p>`}
@@ -81,7 +81,7 @@ function renderCommentaryHub() {
     const essay = ESSAYS.find(item => item.id === essayId);
     if (!essay) {
       document.title = 'Essay not found — Nerds Unbridled';
-      output.innerHTML = '<a class="back-link" href="/commentary/">&larr; All conversations</a><h1>Essay not found</h1><p>This discussion is not available.</p>';
+      output.innerHTML = '<a class="back-link" href="/commentary/">&larr; All conversations</a><h1>Essay not found</h1><p>This discussion is not available.</p><img src="../images/notFoundCat.png" alt="Confused Cat" style="width:300px;height:300px;margin:auto;margin-top:40px;">';
       return;
     }
     const items = commentariesFor(essay.id);
