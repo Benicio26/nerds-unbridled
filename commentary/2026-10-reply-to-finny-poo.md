@@ -1,5 +1,5 @@
 ---
-title: "A response to FInny"
+title: "お前はもう、死んでいるな〜"
 author: "Spoopy"
 article: "2026-07-Armenia-Gambit"
 date: "2026-10-14"
