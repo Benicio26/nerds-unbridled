@@ -103,7 +103,7 @@ function renderCommentaryHub() {
     .sort((a, b) => b.date.localeCompare(a.date));
   output.innerHTML = `<a class="back-link" href="/">&larr; Latest essays</a>
     <div class="featured-eyebrow">Conversations</div>
-    <h1>Commentary</h1>
+    <h1>Commentaries</h1>
     <p class="commentary-origin-excerpt">Essays are the beginning of a conversation. Read the responses and counterarguments they have inspired.</p>
     <hr class="commentary-rule">
     ${threads.length ? `<div class="commentary-threads">${threads.map(essay => {
@@ -114,7 +114,7 @@ function renderCommentaryHub() {
         <p>${escapeHTML(essay.excerpt)}</p>
         <span class="commentary-meta">By ${escapeHTML(essay.author)}</span>
       </a>`;
-    }).join('')}</div>` : '<div class="commentary-empty">No commentaries have been published yet. Open an <a href="/archive/">essay</a> to begin a conversation.</div>'}`;
+    }).join('')}</div>` : '<div class="commentary-empty">No commentaries have been published yet. Open and respond to an <a href="/archive/">essay</a> to begin a conversation.</div>'}`;
 }
 
 function renderCommentaryArticle() {
