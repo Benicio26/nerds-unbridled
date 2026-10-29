@@ -13,6 +13,6 @@
  */
 
 const COMMENTARY_FORM = {
-  url: "https://forms.gle/k7MbpRyKsiy3PNnt8",
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSc_L_tCtUjoEniUzk11V78a5tucYnyhDdCM0cvDbPsPqIQMEQ/viewform?usp=header",
   articleFieldEntry: "hui"
 };

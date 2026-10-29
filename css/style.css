@@ -905,3 +905,93 @@ nav.primary-nav { flex-wrap: wrap; row-gap: 8px; }
   .commentary-callout { padding: 22px 18px; }
   .commentary-thread { padding: 22px 18px; }
 }
+
+
+/* ============ EDITORIAL WORDMARK + COORDINATED LOGO REVEAL ============
+   The entire emblem is driven by ONE animated progress variable. We don't
+   animate its own width/height in em units while the title's font-size changes:
+   that caused the previous two-stage growth on expansion. The icon, its slot,
+   and its spacing now use the same .28s easing and progress curve. */
+
+@property --logo-reveal {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 1;
+}
+
+.masthead-brand .masthead-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.nameplate-with-icon {
+  /* Fixed to viewport, not the animating nameplate font-size. */
+  --logo-size: clamp(2.76rem, 6.9vw, 5.06rem);
+  --logo-side-gap: clamp(.25rem, .92vw, .625rem);
+  --logo-reveal: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  white-space: nowrap;
+  transition: font-size .28s ease, line-height .28s ease,
+              --logo-reveal .28s ease;
+}
+
+.masthead.is-scrolled .nameplate-with-icon {
+  --logo-reveal: 0;
+}
+
+.nameplate-with-icon .word-1,
+.nameplate-with-icon .word-2 {
+  flex: none;
+}
+
+.nameplate-with-icon .word-2 {
+  margin-left: 0;
+  transition: margin-left .28s ease;
+}
+
+/* Slot handles layout; its image has a stable intrinsic rendered size.
+   The scale and room allotted for it advance together as it opens/closes. */
+.masthead-logo-slot {
+  position: relative;
+  display: block;
+  flex: none;
+  width: calc(var(--logo-size) * var(--logo-reveal));
+  height: calc(var(--logo-size) * var(--logo-reveal));
+  margin-inline: calc(var(--logo-side-gap) * var(--logo-reveal));
+  opacity: var(--logo-reveal);
+  pointer-events: none;
+}
+
+.masthead-logo {
+  position: absolute;
+  display: block;
+  width: var(--logo-size);
+  height: var(--logo-size);
+  max-width: none;
+  left: 50%;
+  top: 50%;
+  object-fit: contain;
+  transform-origin: center;
+  transform: translate(-50%, -50%) scale(var(--logo-reveal));
+}
+
+.masthead.is-scrolled .nameplate-with-icon .word-2 {
+  margin-left: .23em;
+}
+
+@media (max-width: 540px) {
+  /* Phone widths retain the current one-line layout. */
+  .nameplate-with-icon {
+    --logo-size: clamp(1.9rem, 8.5vw, 2.75rem);
+    font-size: clamp(1.65rem, 7.4vw, 2.4rem);
+  }
+
+  .masthead.is-scrolled .nameplate-with-icon {
+    font-size: clamp(1.45rem, 6.4vw, 1.7rem);
+  }
+}

@@ -199,7 +199,7 @@ function initAutoCompactMasthead() {
 
   const compactAt = 50;
   // Require meaningful scrolling beyond the collapse point, not just a few pixels.
-  const minimumScrollRange = compactAt + 150;
+  const minimumScrollRange = compactAt + 75;
   let canCompact = false;
   let ticking = false;
 
