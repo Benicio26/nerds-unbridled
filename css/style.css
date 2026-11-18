@@ -452,7 +452,7 @@ nav.primary-nav a.active {
   margin: 0 0 1.3em;
 }
 /* redo initial letter */
-.essay-body p:first-of-type::first-letter {
+.essay-body > p:first-child::first-letter {
   font-family: var(--font-display);
   font-size: 3.4em;
   float: left;
@@ -466,7 +466,7 @@ nav.primary-nav a.active {
   font-family: var(--font-display);
   font-size: 1.8rem;
   line-height: 1.2;
-  margin: 2em 0 0.7em;
+  margin: 1em 0 1em;
   color: var(--ink);
 }
 
@@ -474,7 +474,7 @@ nav.primary-nav a.active {
   font-family: var(--font-display);
   font-size: 1.4rem;
   line-height: 1.25;
-  margin: 1.8em 0 0.6em;
+  margin: 1.8em 0 0.5em;
   color: var(--ink);
 }
 
@@ -502,6 +502,10 @@ nav.primary-nav a.active {
   border-left: 3px solid var(--amber);
   color: var(--ink-soft);
   font-style: italic;
+}
+
+.essay-body blockquote p {
+  margin: 0;
 }
 
 .essay-body ul,
