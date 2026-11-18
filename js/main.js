@@ -111,7 +111,7 @@ function renderNewsPost() {
     <div class="featured-eyebrow">News &amp; updates · ${formatDate(post.date)}</div>
     <h1>${escapeHTML(post.title)}</h1>
     <p class="news-post-summary">${escapeHTML(post.summary)}</p>
-    <div class="essay-body">${(post.body || []).map(p => `<p>${escapeHTML(p)}</p>`).join("")}</div>`;
+    <div class="essay-body">${(post.body || []).map(p => `<p>${DOMPurify.sanitize(p)}</p>`).join("")}</div>`;;
 }
 
 /* ---------------- ESSAY DETAIL  ---------------- */
@@ -166,7 +166,7 @@ function initEssayPage() {
       <span>${formatDate(essay.date)}</span>
     </div>
 
-    ${essay.note ? `<div class="essay-body" id="essay-note"><span>A note from the author: ${escapeHTML(essay.note)}</span><hr></div>` : ""}
+    ${essay.note ? `<div class="essay-body" id="essay-note"><span>A note from the author(s): ${escapeHTML(essay.note)}</span><hr></div>` : ""}
 
 
     <div class="essay-body" id="essay-body">

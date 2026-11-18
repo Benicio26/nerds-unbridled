@@ -1,4 +1,5 @@
 /* Add and edit announcements here. Newest posts appear first. Dates use YYYY-MM-DD. */
+
 const NEWS_POSTS = [
   {
     id: "publication-launch",
@@ -6,26 +7,11 @@ const NEWS_POSTS = [
     date: "2026-10-30",
     summary: "Welcome to Nerds Unbridled! We hope you'll stick around.",
     body: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-    ]
-  },
-  {
-    id: "call-for-contributions",
-    title: "Call for Contributions",
-    date: "2026-10-01",
-    summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    body: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis ipsum. Praesent mauris.",
-    ]
-  },
-  {
-    id: "stylistic-overhaul",
-    title: "Stylistic Formatting",
-    date: "2026-10-12",
-    summary: "Update to how authors can style their publications",
-    body: [
-      "Authors can new use stylistic formatting in their posts!.",
-      "For this curious—this system is based on markdown, so every publication lives in a markdown file which is then read and translated into readable HTML. Those are then converted automatically through GitHub Actions"
+      "Welcome to Nerds Unbridled. We are honored to have you reading through our journal.",
+      "Everything you are currently seeing is the result of months of work and constant deliberation between the editors.",
+      'Since you\'re already here, take a look at our <a href="/essay.html?id=2026-09-unbridled-launch">first roundtable discussion</a>, where we discuss the guiding ethos behind Nerds Unbridled.',
+      'Check our <a href="/about">About</a> page for more information on how to submit your own works and comment on others!'
     ]
   }
 ];
+
