@@ -5,7 +5,7 @@ submission: "Rolling"
 theme: null
 date: "2026-11-18"
 featured: true
-excerpt: "A short note on why student writing deserves a home that isn't a group chat or a professor's filing cabinet."
+excerpt: "A roundtable on why we started Nerds Unbridled."
 note: "The following is a roundtable dicussion drafted by the editors of Nerds Unbridled."
 ---
 
